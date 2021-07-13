@@ -33,6 +33,7 @@ namespace gregslist_csharp
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "gregslist_csharp", Version = "v1" });
             });
             services.AddTransient<DogsService>();
+            services.AddTransient<CatsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

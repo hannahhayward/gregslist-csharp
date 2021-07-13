@@ -4,5 +4,6 @@ namespace gregslist_csharp.Data
 {
     public static class FakeDb{
       public static List<Dog> Dogs = new List<Dog>();
+      public static List<Cat> Cats = new List<Cat>();
     }
 }
