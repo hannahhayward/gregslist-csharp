@@ -8,8 +8,13 @@ public class Dog{
   [Required]
   [MinLength(3)]
   public string Name { get; set; }
+  [Required]
+  [MinLength(3)]
+
   public string Breed { get; set; }
+  [Required]
   public int Age { get; set; }
+  [Required]
   public int Price { get; set; }
 }
 }
