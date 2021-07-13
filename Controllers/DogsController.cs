@@ -13,5 +13,9 @@ namespace gregslist_csharp.Controllers
       public DogsController(DogsService ds){
         _ds = ds;
       }
+    [HttpGet]
+    public List<Dog> GetDogs(){
+      return _ds.GetAll();
+    }
     }
 }
