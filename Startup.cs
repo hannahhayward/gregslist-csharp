@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-
+using gregslist_csharp.Services;
 namespace gregslist_csharp
 {
     public class Startup
@@ -32,6 +32,7 @@ namespace gregslist_csharp
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "gregslist_csharp", Version = "v1" });
             });
+            services.AddTransient<DogsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
